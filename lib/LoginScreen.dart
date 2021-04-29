@@ -30,6 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             TextField(
               controller: _usernameController,
+              textAlign: TextAlign.center,
             ),
           ],
         ),
