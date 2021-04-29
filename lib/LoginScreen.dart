@@ -40,9 +40,19 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 filled: true,
-                fillColor: Colors.white
+                fillColor: Colors.white,
+                contentPadding: EdgeInsets.all(20.0),
               ),
             ),
+            SizedBox(
+              height: 20.0,
+            ),
+            OutlinedButton(
+              onPressed: () {
+                //
+              },
+              child: Text("LOGIN"),
+            )
           ],
         ),
       ),
