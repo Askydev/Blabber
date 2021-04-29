@@ -24,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
       body: Container(
+        color: Colors.white,
         alignment: Alignment.center,
         padding: EdgeInsets.all(30.0),
         child: Column(
@@ -38,6 +39,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     Radius.circular(10.0),
                   ),
                 ),
+                filled: true,
+                fillColor: Colors.white
               ),
             ),
           ],
