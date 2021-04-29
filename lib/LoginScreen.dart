@@ -7,6 +7,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   TextEditingController _usernameController;
+
   @override
   void initState() {
     super.initState();
@@ -31,6 +32,13 @@ class _LoginScreenState extends State<LoginScreen> {
             TextField(
               controller: _usernameController,
               textAlign: TextAlign.center,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10.0),
+                  ),
+                ),
+              ),
             ),
           ],
         ),
