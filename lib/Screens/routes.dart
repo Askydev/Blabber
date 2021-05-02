@@ -6,7 +6,10 @@ class Routes{
   //
   static routes(){
     return{
-      LoginScreen.ROUTE_ID: (context) =>LoginScreen()
+      LoginScreen.ROUTE_ID: (context) =>LoginScreen(),
     };
+  }
+  static initScreen(){
+    return LoginScreen.ROUTE_ID;
   }
 }

@@ -1,4 +1,4 @@
-import 'package:chat_socket/LoginScreen.dart';
+import 'package:chat_socket/Screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
