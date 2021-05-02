@@ -1,15 +1,17 @@
-import 'package:chat_socket/LoginScreen.dart';
-import 'package:flutter/material.dart';
-import 'package:adhara_socket_io/adhara_socket_io.dart';
+import 'package:chat_socket/Screens/ChatScreen.dart';
+import 'package:chat_socket/Screens/ChatUserScreen.dart';
+import 'package:chat_socket/Screens/LoginScreen.dart';
 
-class Routes{
-  //
-  static routes(){
-    return{
-      LoginScreen.ROUTE_ID: (context) =>LoginScreen(),
+class Routes {
+  static routes() {
+    return {
+      LoginScreen.ROUTE_ID: (context) => LoginScreen(),
+      ChatUsersScreen.ROUTE_ID: (context) => ChatUsersScreen(),
+      ChatScreen.ROUTE_ID: (context) => ChatScreen(),
     };
   }
-  static initScreen(){
+
+  static initScreen() {
     return LoginScreen.ROUTE_ID;
   }
 }
