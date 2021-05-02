@@ -1,16 +1,18 @@
-import 'package:chat_socket/Screens/LoginScreen.dart';
 import 'package:flutter/material.dart';
 
-void main(){
-  runApp(MyApp());
+import 'package:chat_socket/Screens/routes.dart';
+
+void main() {
+  runApp(HomeApp());
 }
 
-class MyApp extends StatelessWidget {
+class HomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      routes: Routes.routes(),
+      initialRoute: Routes.initScreen(),
     );
   }
 }
